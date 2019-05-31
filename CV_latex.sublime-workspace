@@ -67,18 +67,6 @@
 	},
 	"buffers":
 	[
-		{
-			"contents": "\\documentclass[a4paper,10pt]{article}\n\n%A Few Useful Packages\n\\usepackage{marvosym}\n\\usepackage{fontspec} \t\t\t\t\t%for loading fonts\n\\usepackage{xunicode,xltxtra,url,parskip} \t%other packages for formatting\n\\RequirePackage{color,graphicx}\n\\usepackage[usenames,dvipsnames]{xcolor}\n\\usepackage[big]{layaureo} \t\t\t\t%better formatting of the A4 page\n% an alternative to Layaureo can be ** \\usepackage{fullpage} **\n\\usepackage{supertabular} \t\t\t\t%for Grades\n\\usepackage{titlesec}\t\t\t\t\t%custom \\section\n\n%Setup hyperref package, and colours for links\n\\usepackage{hyperref}\n\\definecolor{linkcolour}{rgb}{0,0.2,0.6}\n\\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}\n\n%FONTS\n\\defaultfontfeatures{Mapping=tex-text}\n%\\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin}\n%%% modified for Karol Kozioł for ShareLaTeX use\n\\setmainfont[\nSmallCapsFont = Fontin-SmallCaps.otf,\nBoldFont = Fontin-Bold.otf,\nItalicFont = Fontin-Italic.otf\n]\n{Fontin.otf}\n%%%\n\n%CV Sections inspired by: \n%http://stefano.italians.nl/archives/26\n\\titleformat{\\section}{\\Large\\scshape\\raggedright}{}{0em}{}[\\titlerule]\n\\titlespacing{\\section}{0pt}{3pt}{3pt}\n%Tweak a bit the top margin\n%\\addtolength{\\voffset}{-1.3cm}\n\n%Italian hyphenation for the word: ''corporations''\n\\hyphenation{im-pre-se}\n\n%-------------WATERMARK TEST [**not part of a CV**]---------------\n\\usepackage[absolute]{textpos}\n\n\\setlength{\\TPHorizModule}{30mm}\n\\setlength{\\TPVertModule}{\\TPHorizModule}\n\\textblockorigin{2mm}{0.65\\paperheight}\n\\setlength{\\parindent}{0pt}\n\n%--------------------BEGIN DOCUMENT----------------------\n\\begin{document}\n\n%WATERMARK TEST [**not part of a CV**]---------------\n%\\font\\wm=''Baskerville:color=787878'' at 8pt\n%\\font\\wmweb=''Baskerville:color=FF1493'' at 8pt\n%{\\wm \n%\t\\begin{textblock}{1}(0,0)\n%\t\t\\rotatebox{-90}{\\parbox{500mm}{\n%\t\t\tTypeset by Alessandro Plasmati with \\XeTeX\\  \\today\\ for \n%\t\t\t{\\wmweb \\href{http://www.aleplasmati.comuv.com}{aleplasmati.comuv.com}}\n%\t\t}\n%\t}\n%\t\\end{textblock}\n%}\n\n\\pagestyle{empty} % non-numbered pages\n\n\\font\\fb=''[cmr10]'' %for use with \\LaTeX command\n\n%--------------------TITLE-------------\n\\par{\\centering\n\t\t{\\Huge Alessandro \\textsc{Plasmati}\n\t}\\bigskip\\par}\n\n%--------------------SECTIONS-----------------------------------\n%Section: Personal Data\n\\section{Personal Data}\n\n\\begin{tabular}{rl}\n    \\textsc{Place and Date of Birth:} & Someplace, Italy  | dd Month 1912 \\\\\n    \\textsc{Address:}   & CV Inn 19, 20301, Milano, Italy \\\\\n    \\textsc{Phone:}     & +39 123 456789\\\\\n    \\textsc{email:}     & \\href{mailto:hecmartinsol@gmail.com}{hecmartinsol@gmail.com}\n\\end{tabular}\n\n%Section: Work Experience at the top\n\\section{Work Experience}\n\\begin{tabular}{r|p{11cm}}\n \\emph{Current} & Trader at \\textsc{Enoi} s.p.a., Milan \\\\\\textsc{Jan 2009}&\\emph{Physical Natural Gas Trading}\\\\&\\footnotesize{Provided analysis of spreads, in particular time and location spreads, with emphasis on trading opportunities on the curve, also taking into account the availability of storage facilities. Became familiar with logistic implications of physical gas trading and developed knowledge of continental virtual hubs for gas exchange.}\\\\\\multicolumn{2}{c}{} \\\\\n \\textsc{Jul-Oct 2008} & 1\\textsuperscript{st} year Analyst at \\textsc{Lehman Brothers}, London \\\\&\\emph{Commodities Structured Trading}\\\\&\\footnotesize{Developed spreadsheets for risk analysis on exotic derivatives on a wide array of commodities (\\textit{ags, oils, precious} and \\textit{base metals}), managed blotter and secondary trades on structured notes, liaised with Middle Office, Sales and Structuring for bookkeeping.}\\\\\\multicolumn{2}{c}{} \\\\\n\\textsc{Summer 2007} & Summer Intern at \\textsc{Lehman Brothers}, \\emph{Capital Markets}\\\\&\\footnotesize{Received pre-placed offer from the Exotics Trading Desk as a result of very positive review. Rated ``\\emph{truly distinctive}'' for Analytical Skills and Teamwork.}\n\\end{tabular}\n\n%Section: Education\n\\section{Education}\n\\begin{tabular}{rl}\t\n \\textsc{July} 2008 & Master of Science in \\textsc{Finance}, \\textbf{Bocconi University}, Milan\\\\\n& 110/110 \\small\\emph{summa cum laude} | Major: Quantitative Finance\\\\\n& Thesis: ``Sublinear and Locally Sublinear Prices'' | \\small Advisor: Prof. Erio \\textsc{Castagnoli}\\\\\n&\\normalsize \\textsc{Gpa}: 28.61/30\\hyperlink{grds}{\\hfill | \\footnotesize Detailed List of Exams}\\\\&\\\\\n\\textsc{July} 2006& Undergraduate Degree in \\textsc{Law} and \\textsc{Business Administration} \\\\&110/110 \\small\\emph{summa cum laude}, \\normalsize\\textbf{Bocconi University}, Milan\\\\\n& Thesis: ``Portfolio Strategies with Target Prices'' | \\small Advisor: Stefano \\textsc{Bonini}\\\\\n&\\normalsize \\textsc{Gpa}: 29.85/30\\hyperlink{grds_cleli}{\\hfill| \\footnotesize Detailed List of Exams}\\\\&\\\\\n\\textsc{Fall} 2005& Exchange Semester at \\textbf{University of Southern California}, Los Angeles\\\\\n&\\textsc{Gpa}: 3.875/4 \\hyperlink{grds_usc}{\\hfill| \\footnotesize Detailed List of Exams}\\\\&\\\\\n\\textsc{July} 2003& \\textbf{Liceo Classico ``E. Duni''}, Matera | Final Grade: 100/100\n\\end{tabular}\n\n%Section: Scholarships and additional info\n\\section{Scholarships and Certificates}\n\\begin{tabular}{rl}\n \\textsc{Sept.} 2006 & Scholarship for graduate students with an outstanding curriculum \\footnotesize(\\EURcr 30,000)\\normalsize\\\\\n\\textsc{June} 2006 & {\\textsc{Gmat}\\textregistered}\\setmainfont[SmallCapsFont=Fontin-SmallCaps.otf]{Fontin.otf}: 730 (\\textsc{q:50;v:39}) 96\\textsuperscript{th} percentile; \\textsc{awa}: 6.0/6.0 (89\\textsuperscript{th} percentile)\n\\end{tabular}\n\n%Section: Languages\n\\section{Languages}\n\\begin{tabular}{rl}\n \\textsc{Italian:}&Mothertongue\\\\\n\\textsc{English:}&Fluent\\\\\n\\textsc{French:}&Basic Knowledge\\\\\n\\end{tabular}\n\n\\section{Computer Skills}\n\\begin{tabular}{rl}\n Basic Knowledge:& \\textsc{php}, my\\textsc{sql}, \\textsc{html}, Access, \\textsc{Linux}, ubuntu, {\\fb \\LaTeX}\\setmainfont[SmallCapsFont=Fontin-SmallCaps.otf]{Fontin.otf}\\\\\nIntermediate Knowledge:& \\textsc{vba}, Excel, Word, PowerPoint\\\\\n\\end{tabular}\n\n\\section{Interests and Activities}\nTechnology, Open-Source, Programming\\\\\nParadoxes in Decision Making, Psychoanalysis, Behavioural Finance\\\\\nFootball, Travelling\n\n\\newpage\n\\par{\\centering\\Large \\hypertarget{grds}{Master of Science in \\textsc{Finance}}\\par}\\large{\\centering Grades\\par}\\normalsize\n\\begin{center}\n\\begin{tabular}{lcc}\n\\multicolumn{1}{c}{\\textsc{Exam}}&\\textsc{Grade}&\\textsc{Credit Hrs}\\\\ \\hline\nCorporate Finance (Valuation)\t&25&\t6\\\\\nFinancial Statement Analysis\t&28&\t6\\\\\nStatistics\t&27&\t6\\\\\nTheory of Finance\t&26&\t6\\\\\nQuantitative Methods for Finance\t&30&\t6\\\\\nEconometrics\t&24\t&6\\\\\nDerivatives\t&31&\t6\\\\\nManagement of Financial and Insurance Companies\t&30&\t6\\\\\nBusiness Law\t&31&\t6\\\\\nInvestment Banking\t&28&\t6\\\\ \\\\\n\t\t\nBehavioral Models for Economics and Finance\t&29&\t6\\\\\nNumerical Methods for Finance\t&29&\t6\\\\\nAdvanced Derivatives\t&30&\t6\\\\\nFixed Income (Advanced Methods)\t&30&\t6\\\\ \\\\\n\t\t\nEnglish Language\t&30&\t4\\\\\nFrench Language\t&31&\t4\\\\\n\t\t\nInternship\t&\t&8\\\\\n\t\t\nFinal Thesis\t&\t&20\\\\\n\t\t\n\t\t& Total&120\\\\\\cline{2-3}\n&\\textsc{Gpa}&\\textbf{28.61}\n\\end{tabular}\n\\end{center}\n\\bigskip\n\\hrule\n\\bigskip\n\\par{\\centering\\Large \\hypertarget{grds_cleli}{Undergraduate Degree in \\textsc{Law and Business Administration}}\\par}\\large{\\centering Grades\\par}\\normalsize\n\n\\begin{center}\n\n\\tablefirsthead{%\n  \\multicolumn{1}{c}{\\textsc{Esame (\\textsc{ita})}}&\\multicolumn{1}{c}{\\textsc{Exam (\\textsc{eng})}}&\\textsc{Grade}&\\textsc{Credit Hrs}\\\\ \\hline}\n\\tablehead{%\n\\multicolumn{1}{c}{\\textsc{Esame (\\textsc{ita})}}&\\multicolumn{1}{c}{\\textsc{Exam (\\textsc{eng})}}&\\textsc{Grade}&\\textsc{Credit Hrs}\\\\ \\hline\n}\n\\tabletail{%\n}\n\\tablelasttail{}\t\n\n \\begin{supertabular}{p{4.9cm} p{4.9cm} c c}\nEconomia aziendale&Theory and principles of management& 28 & 8\\\\\nIstituzioni di diritto privato&Principles of private law&30&8\\\\\n Istituzioni di diritto pubblico \n&\n Principles of public law \n& 30&\n 6 \n\\\\\nMatematica generale \n& Mathematics \n&31&8\\\\\n Contabilit\\`a e Bilancio \n& Accounting and Financial statements \n& 31 & 8\\\\\n Diritto del lavoro \n&\n Labour law \n& 30&\n4 \n\\\\\n Informatica & Computer skills &29& 4 \n\\\\\n Economia e gestione delle imprese & Corporate management &31&6 \n\\\\\n Microeconomia & Microeconomics &30&8 \n\\\\\n Contabilit\\`a e bilancio 2 & Accounting and financial statements 2 \n&29&8 \\\\\n Diritto commerciale & Company and business law &30&8 \n\\\\\n Macroeconomia & Macroeconomics &29&8 \n\\\\\n Statistica & Statistics &30&6\\\\\n Diritto delle procedure concorsuali & Insolvency law &31&4 \n\\\\\n Finanza aziendale \n& Corporate finance \n&31 &8 \\\\\n Matematica finanziaria & Financial mathematics &31&4 \n\\\\\n Programmazione e controllo \n& Management accounting &31&8 \n\\\\\nLingua Inglese \\textsc{c1}& English Language \\textsc{c1}& 25&6\\\\ \nDiritto tributario & Tax law &30&6 \n\\\\\nOrganizzazione e sistemi informativi aziendali &Management information systems &28&6 \n\\\\\n Strategia e politica aziendale* \n& Business strategy* & 29& 6 \n\\\\\nDerivati*&Derivatives*&30&6\\\\\nOpzionale all'estero* & Corporate Financial Strategy* &30&6\\\\\nLingua Francese \\textsc{b1} & French Language \\textsc{b1}&31&6\\\\\nEconomia dei mercati e degli intermediari finanziari* \n&Financial markets and institutions* &30&6 \n\\\\\nRevisione aziendale \n&Financial auditing &31&6 \n\\\\\nScienza delle finanze &Public economics &30&6 \n\\\\\n Lavoro finale& Final report&&6\\\\\n& & Total&180\\\\\\cline{3-4}\n& &\\textsc{Gpa}&\\textbf{29.85}\\\\ \\\\ \\multicolumn{4}{l}{\\footnotesize A star (*) indicates that the course was taken at the \\textbf{University of Southern California}, Los Angeles, \\textsc{usa}}\n \\end{supertabular}\n\\end{center}\n\\bigskip\n\\hrule\n\\bigskip\n\\par{\\centering\\Large \\hypertarget{grds_usc}{Exchange Program at \\textsc{usc}, Los Angeles}\\par}\\large{\\centering Grades\\par}\\normalsize\n\n\\begin{center}\n\\begin{tabular}{lcc}\n\\multicolumn{1}{c}{\\textsc{Exam}}&\\textsc{Grade}&\\textsc{Grade Points}\\\\ \\hline\nCorporate Financial Strategy\t&A&\t4\\\\\nDerivatives\t&A&\t4\\\\\nMoney, Credit, and Banking\t&A&\t4\\\\\nBusiness Strategy & A-& 3.5\\\\\n& &\\\\\\cline{2-3}\n &\\textsc{Gpa}&\\textbf{3.875}\n\\end{tabular}\n\\end{center}\n%\\newpage\n%\\hypertarget{gmat}{\\textsc{Gmat}\\setmainfont{LMRoman10 Regular}\\textregistered\\setmainfont[SmallCapsFont=Fontin-SmallCaps]{Fontin-Regular}}\n\n%\\XeTeXpdffile ''GMAT.pdf'' page 1 scaled 800\n\n\\end{document}\n",
-			"file": "cv.tex",
-			"file_size": 10257,
-			"file_write_time": 131922985192960151,
-			"settings":
-			{
-				"buffer_size": 10242,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "Packages/Python/Python.sublime-build",
 	"build_system_choices":
@@ -204,10 +192,11 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Users/hecma/Desktop/CV_LATEX"
+		"/C/Users/hecma/Dropbox/Varios/Data/Curriculums/latex_cv"
 	],
 	"file_history":
 	[
+		"/C/Users/hecma/Dropbox/Varios/Data/Curriculums/latex_cv/cv.tex",
 		"/C/Users/hecma/Desktop/CV_LATEX/CV_latex.sublime-project",
 		"/C/Users/hecma/Desktop/curso_python/katas/move_zeros.py",
 		"/C/Users/hecma/Desktop/curso_python/listas.py",
@@ -279,210 +268,14 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "cv.tex",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 10242,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2333,
-								2350
-							]
-						],
-						"settings":
-						{
-							"SL.39.region_keys":
-							[
-							],
-							"bracket_highlighter.busy": false,
-							"bracket_highlighter.clone": -1,
-							"bracket_highlighter.clone_locations":
-							{
-								"close":
-								{
-								},
-								"icon":
-								{
-								},
-								"open":
-								{
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.clone_regions":
-							[
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content"
-							],
-							"bracket_highlighter.locations":
-							{
-								"close":
-								{
-									"1":
-									[
-										2357,
-										2358
-									]
-								},
-								"icon":
-								{
-									"1":
-									[
-										"Packages/BracketHighlighter/icons/curly_bracket.png",
-										"region.purplish"
-									]
-								},
-								"open":
-								{
-									"1":
-									[
-										2332,
-										2333
-									]
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.regions":
-							[
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content"
-							],
-							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax",
-							"word_wrap": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 2049.33333333,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 22.0
+		"height": 23.0
 	},
 	"input":
 	{
