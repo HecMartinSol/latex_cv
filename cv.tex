@@ -1,0 +1,184 @@
+\documentclass[a4paper,10pt]{article}
+
+%Paquetes útiles
+\usepackage{marvosym}
+\usepackage{fontspec} 						%Cargar fuentes
+\usepackage{xunicode,xltxtra,url,parskip} 	%Formateo
+\RequirePackage{color,graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[big]{layaureo} 					%Mejor formateo A4
+\usepackage{supertabular} 					%for Grades
+\usepackage{titlesec}						%custom \section
+
+\usepackage[spanish]{babel}
+\usepackage{fancyhdr}
+
+
+%Setup hyperref package, and colours for links
+\usepackage{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+%FONTS
+\defaultfontfeatures{Mapping=tex-text}
+%\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin}
+%%% modified for Karol Kozioł for ShareLaTeX use
+\setmainfont[	SmallCapsFont = Fontin-SmallCaps.otf,
+				BoldFont = Fontin-Bold.otf,
+				ItalicFont = Fontin-Italic.otf
+			]
+{Fontin.otf}
+%%%
+
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{3pt}{3pt}
+%Tweak a bit the top margin
+%\addtolength{\voffset}{-1.3cm}
+
+\hyphenation{im-pre-se}
+
+%-------------WATERMARK TEST [**not part of a CV**]---------------
+\usepackage[absolute]{textpos}
+
+\setlength{\TPHorizModule}{30mm}
+\setlength{\TPVertModule}{\TPHorizModule}
+\textblockorigin{2mm}{0.65\paperheight}
+\setlength{\parindent}{0pt}
+
+%--------------------BEGIN DOCUMENT----------------------
+\begin{document}
+
+\pagestyle{empty} % non-numbered pages
+
+\font\fb=''[cmr10]'' %for use with \LaTeX command
+
+%--------------------TITLE-------------
+\par{\centering
+		{\Huge \textsc{Héctor Martín Solís}
+	}\bigskip\par}
+
+%--------------------SECTIONS-----------------------------------
+%Section: Datos personales
+\section{Datos personales}
+
+\begin{tabular}{rl}
+    \textsc{Fecha de nacimiento:} & 26 de Agosto de 1992 \\
+    \textsc{Residencia:}   & \href{https://goo.gl/maps/dTcRVe9CrJS2}{Zona Ciudad Lineal, Madrid, España} \\
+    \textsc{Teléfono:}     & +34 620 518 570\\
+    \textsc{DNI:}     & 52880566R\\
+    \textsc{Email:}     & \href{mailto:hecmartinsol@gmail.com}{hecmartinsol@gmail.com}
+\end{tabular}
+
+%Section: Historial académico
+\section{Historial académico}
+\begin{tabular}{rl}	
+	\textsc{2011 - 2016}& Grado en Ingeniería del Software\\&
+	\small\emph{Universidad Complutense de Madrid}\\&\\
+
+	\textsc{2010 - 2011}& Grado en Arquitectura\\&
+	\small\emph{Universidad de Alcalá de Henares}\\&\\
+
+	\textsc{2009 - 2010}& Bachillerato de Ciencias\\&
+	\small\emph{Colegio Amor de Dios de Madrid}\\&\\
+\end{tabular}
+
+
+%Section: Conocimientos técnicos
+\section{Conocimientos técnicos}
+\begin{tabular}{r|p{11cm}}
+
+ 	\textsc{Alto} & Desarrollo profesional \\&
+	\footnotesize{
+		PHP, HTML5, JavaScript, CSS3 \newline
+		Bootstrap \newline
+		Codeigniter \newline
+		BBDD relacionales: MySQL, SQLServer, Sybase, PostgreSQL  \newline
+		BBDD no relacionales: MongoDB
+	}
+	\\\multicolumn{2}{c}{} \\
+
+ 	\textsc{Medio} & Desarrollo Personal \\&
+	\footnotesize{
+		Python \newline
+		MEAN Stack (MongoDB, ExpressJS, AngularJS, NodeJS)  \newline
+		Symfony, Laravel \newline
+		C++, Java \newline
+		Latex
+	}
+	\\\multicolumn{2}{c}{} \\
+\end{tabular}
+
+%Section: Idiomas
+\section{Idiomas}
+\begin{tabular}{rl}
+	\textsc{Inglés:}&	Escrito, hablado, traducción y técnico: Nivel B2\\&
+	\emph{\textbf{Mar. 2012:} First Certificate in English. Level B2.}\\&\\	
+\end{tabular}
+
+%Section: Experiencia laboral at the top
+\section{Experiencia laboral}
+\begin{tabular}{r|p{11cm}}
+ 	\emph{Mar. 2019 - Actualmente}&		Desarrollador Senior PHP Full Stack \\&
+	\emph{\href{https://internetrepublica.com/}{Internet República S.L.}}\\&
+ 	\footnotesize{
+ 		- Migración del backend de las webs \href{http://socialpubli.com}{SocialPubli} y \href{http://socialreacher.com}{SocialReacher} a un sistema con microservicios en Symfony.\newline
+ 		- Cambio en la gestión de procesos usando el sistema de colas de RabbitMQ.\newline
+ 		- Mejora en procesos de scrapping utilizando NodeJS .\newline
+ 	}\\
+ 	\multicolumn{2}{c}{} \\
+
+ 	\emph{Nov. 2018 - Feb. 2019}&		Analista Desarrollador PHP Full Stack \\&
+ 	\emph{BBVA España. Contratación externa con Aubay}\\&
+ 	\footnotesize{
+ 		- Soporte y mantenimiento de las herramientas de la intranet de la empresa.\newline
+		- Captura de requisitos, análisis, estimación y desarrollo de nuevas funcionalidades requeridas para aplicaciones web de la intranet
+ 	}\\
+ 	\multicolumn{2}{c}{} \\
+ 	
+
+ 	\textsc{Mar. 2016 - Nov. 2018} & 	Desarrollador PHP Web Full Stack \\&
+	\emph{\href{https://www.kioskoymas.com}{Kiosko y Más SGP S.L.}}\\&
+	\emph{Vocento S.L.}\\&
+	\footnotesize{
+		- Desarrollo de nuevas funcionalidades para la web de la empresa, tanto la parte pública como la parte privada, garantizando la seguridad y protección de los datos, utilizando PHP sobre el framework Codeigniter.\newline
+		- Uso de tecnologías PHP, HTML + JS + CSS, MySQL y MongoDB. \newline
+		- Desarrollos tanto FrontEnd como BackEnd siguiendo un sistema de integración continua utilizando la metodología SCRUM y sistemas de control de versiones GIT.\newline
+		- Integración y asesoramiento en todo el proceso de desarrollo software: estimación, alcance, captura de requisitos, coordinación de equipo, planes de contingencia… \newline
+		- Desarrollo de APIs REST, tanto XML como JSON para la transmisión de datos del sistema para terceros. \newline
+		- Integración de otras APIs tanto públicas (Google, Analytics, Facebook…) como privadas otros clientes para su integración en el sistema.\newline
+		- Gestión y mantenimiento de los servidores de trabajo. (Linux, CentOS).\newline
+		- Diseño, gestión y administración de las Bases de Datos de la empresa, tanto relacionales, utilizando MySQL (MariaDB) como no relacionales (MongoDB).\newline
+		- Desarrollo integral del sistema de suscripciones de la página, incluyendo el sistema de compra a través de la plataforma \href{https://www.evosnap.com/}{EvoSnap} vía API\newline
+		- Diseño y desarrollo íntegro de la plataforma de \href{http://pressclipping.cedro.org}{Presscipping de Cedro}	
+	}
+	\\\multicolumn{2}{c}{} \\
+
+ 	\textsc{Nov. 2014 - Jun. 2015} & 	Desarrollador Web Junior \\&
+	\emph{\href{https://codeeta.com/}{Codeeta Mob S.L.}}\\&
+	\emph{Prácticas en empresa}\\&
+	\footnotesize{
+		- Realización de las prácticas de empresa como desarrollador web Junior.\newline
+		- Trabajador externo para \href{https://www.kioskoymas.com}{Kiosko y Más SGP S.L.}
+	}
+	\\\multicolumn{2}{c}{} \\
+
+ 	\textsc{Nov. 2014 - Jun. 2015} & 	Soporte del departamento IT \\&
+	\emph{\href{https://www.grupo-bosch.es/}{Robert Bosch España S.L.U.}}\\&
+	\emph{Prácticas en empresa}\\&
+	\footnotesize{
+		- Apoyo al equipo informático en desarrollo de scripts para automatización de tareas.	\newline
+		- Generación de etiquetas mediante su programación ZPL para impresoras Zebra.
+	}
+	\\\multicolumn{2}{c}{} \\
+
+ 	\textsc{Jun. 2013 - Nov. 2013} & 	Beca de colaboración práctica \\&
+	\emph{\href{https://comercioyturismo.ucm.es/}{Factultad de Comercio y Turismo de la Universidad Complutense de Madrid.}}\\&
+
+\end{tabular}
+
+% \section{Intereses}
+% Tecnología y Programación\\
+% Inteligencia Artificial y Aprendizaje Automático\\
+% Cine, series, moda, viajes
+
+\end{document}
